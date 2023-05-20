@@ -42,3 +42,40 @@ $('.cf a').on('click', function(event) {
     );
   }
 });
+
+// collapsible menu
+// var coll = document.getElementsByClassName("btn");
+// console.log(coll);
+
+// var content = document.getElementsByClassName('category-items');
+// console.log(ca)
+// var i;
+
+// for (i = 0; i < coll.length; i++) {
+//   coll[i].addEventListener("click", function() {
+
+//     if (content[i].style.display === "flex") {
+//       console.log('true')
+//       content[i].style.display = "none";
+//     } else {
+//       content[i].style.display = "flex";
+//     }
+//   });
+// }
+
+let btn = document.getElementsByClassName('btn');
+
+for(let i=0;i<btn.length;i++){
+  // console.log(btn[i]);
+  let content = document.getElementsByClassName(`item-${i}`);
+  // console.log(content[0]);
+
+  btn[i].addEventListener('click', function(){
+    if(content[0].style.display === 'flex'){
+      content[0].style.display = 'none'
+    }
+    else{
+      content[0].style.display = 'flex'
+    }
+  })
+}
