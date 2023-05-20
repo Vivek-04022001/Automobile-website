@@ -13,7 +13,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* outline: 1px solid blue; */
+  outline: 1px solid red;
 }
 
 body {
@@ -91,54 +91,62 @@ a {
   width: 100%;
   min-height: 100vh;
   background-color: var(--products-card-bg);
-
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  gap:1em;
+  overflow:hidden;
 }
-
-#products .container {
-  width: 100%;
-  /* background:orange; */
-  
-}
-
 #products h2 {
   font-size: 2.1rem;
   text-align: center;
   color:black;
 }
 
+#products .container {
+  display:inline-block;
+  width:60%;
+}
+
+
 #products .container .category{
   position:relative;
+  display:inline-block;
   
 }
 
 #products .container .category img{
   display:block;
-  min-width: 300px;
-  width:65%;
-  margin:auto;
- 
   
+  width:100%;
+  min-width: 300px;
+  margin:auto;
 }
 
 #products .container .category button{
   position: absolute;
-  bottom: 3%;
-  right: 19%;
+  bottom: 0;
+  right: 0;
+}
+
+#products .container .category button:hover{
+  transform:scale(1.2)
 }
 
 #products .container .category-items {
   display: none;
   justify-content: center;
   align-items: center;
-  gap: 1.7em;
+  gap: 0.5em;
   flex-wrap: no-wrap;
   padding: 1em 3.7em;
-  overflow-y:scroll;
+  overflow-y:auto;
 }
 
 #products .category-items img {
-  width: 25%;
-  border-radius: 10px;
+ 
+  width: 30%;
+  /* border-radius: 10px; */
 } 
 
 
@@ -194,11 +202,11 @@ footer .footer-bottom {
   padding: 5px 10px ;
   color: #fff;
   display: inline-block;
-  border-radius: 12px;
+  /* border-radius: 10px; */
   outline: none;
   border: none;
   cursor: pointer;
-  font-size:12px;
+  font-size:16px;
 }
 
 .btn-primary {
@@ -345,13 +353,42 @@ nav a#openup {
 
  .btn{
   padding: 2px 4px;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
+  
  }
 
- #products .container .category button{
+
+#products{
+  height: 60vh;
+  gap: 0.5em;
+}
+
+#products .container{
+  min-width: 100%;
+  overflow:hidden;
+  
+}
+
+#products .container .category img{
+  min-width:200px;
+
+}
+#products .container .category button{
   position: absolute;
-  bottom: 3px;
+  bottom: 0px;
   right: 0px;
+}
+
+#products .container .category-items{
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+  
+  padding: 1em 3.7em;
+  overflow-y:auto;
+}
+#products .container .category-items img{
+ width: 60%;
 }
 
 }
