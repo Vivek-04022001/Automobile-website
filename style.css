@@ -2,12 +2,6 @@
 
 /* CSS Variables */
 :root {
-  --primary-color: #b90415;
-  --primary-color-hover: #d3071b;
-  --secondary-color: #103063;
-  --secondary-color-hover: #143f85;
-  --light-color: #f4f4f4;
-
   /* new colors */
   --primary-color-bg: #252529;
   --products-card-bg: #faf9f6;
@@ -28,6 +22,7 @@ body {
   margin: 0;
   color: #fff;
   line-height: 1.6;
+  padding-bottom:5000px;
 }
 
 img {
@@ -42,6 +37,7 @@ a {
 /* Section */
 .section {
   padding: 2rem 0;
+  
 }
 
 .section-head {
@@ -53,17 +49,8 @@ a {
   font-size: 2rem;
 }
 
-section#entertainment {
-  background: url(../img/section-bg.jpg) no-repeat bottom/cover;
-  padding: 10rem 0;
-}
 
-.gift-cards {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(2, 1fr);
-  text-align: left;
-}
+
 
 /* Showcase */
 #showcase {
@@ -74,20 +61,19 @@ section#entertainment {
   height: 100vh;
   position: relative;
   overflow-y: hidden;
-  position: relative;
+ 
   z-index: 0;
 }
 
-#showcase::after {
+
+#showcase::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-
   box-shadow: inset 120px 100px 250px #000, inset -120px -100px 250px #000;
-  opacity: 1;
   width: 100%;
   height: 100%;
   z-index: -1;
@@ -95,7 +81,7 @@ section#entertainment {
 
 #showcase .container {
   margin-top: 25vh;
-  z-index: 2;
+  z-index: 1;
 }
 
 #showcase h1 {
@@ -112,7 +98,9 @@ section#entertainment {
 
 #products {
   width: 100%;
-  min-height: 80vh;
+  min-height: 100vh;
+  background-color:orange;
+  
   
 }
 
@@ -120,10 +108,12 @@ section#entertainment {
   background-color: var(--products-card-bg);
   border-radius: 15px;
   width: 80%;
-  min-height: 60%; 
+  min-height: 60%;
   margin-top: 2em;
   padding-top: 20px;
   padding: 1em;
+  position:relative;
+  
 }
 
 #products h2 {
@@ -132,34 +122,26 @@ section#entertainment {
 }
 
 #products .container .category{
-height: 50%;
-padding:1em;
-
+  position:relative;
+  
 }
 
 #products .container .category img{
   display:block;
-  width: 40%;
-  object-fit :contain;
+  width: 85%;
   margin:auto;
-   border-radius: 10px;
-}
-
-#products .container .category-items{
+  border-radius: 2.4em;
   
-  display:flex;
-  justify-content:space-evenly;
-  align-items:center;
-  gap: 0.7em;
-  flex-wrap:wrap;
-  padding: 1em;
- 
 }
 
-#products .category-items img{
-  width: 20%;
-  border-radius: 10px;
+#products .container .category button{
+  position: absolute;
+  bottom: 1.5em;
+  right: 8em;
 }
+
+
+
 
 /* Footer */
 footer .footer-cols {
@@ -193,6 +175,7 @@ footer .footer-bottom {
   text-align: center;
   margin: 0 auto;
   padding: 0 3rem;
+  
 }
 
 .lead {
@@ -202,20 +185,19 @@ footer .footer-bottom {
 .text-center {
   text-align: center;
 }
-.hide{
-  display:none;
+.hide {
+  display: none;
 }
 
 /* Buttons */
 .btn {
-  padding: 0.5em 1em;
+  padding: 0.7em 1em;
   color: #fff;
   display: inline-block;
   border-radius: 2em;
   outline: none;
   border: none;
   cursor: pointer;
-  margin: 1.4em;
 }
 
 .btn-primary {
@@ -223,7 +205,6 @@ footer .footer-bottom {
 }
 
 .btn-primary:hover {
-  
   transform: scale(1.1);
 }
 
@@ -233,7 +214,6 @@ footer .footer-bottom {
 
 .btn-secondary:hover {
   transform: scale(1.1);
- 
 }
 
 /* Text colors */
@@ -263,13 +243,15 @@ footer .footer-bottom {
 }
 
 /* Navigation */
+
 nav {
   height: 40px;
   width: 100%;
-  /* padding-left:20px; */
   background-color: #333;
   color: #eee;
   position: fixed;
+  /* z-index:20 !important;  */
+  
 }
 nav ul {
   padding: 0;
@@ -389,3 +371,44 @@ nav a#openup {
     display: none;
   }
 }
+
+/* 
+rough work
+/* 
+#products .container .category {
+  margin:auto;
+  width: 750px;
+  height
+  outline: 1px solid red;
+  position: relative;
+
+}
+
+#products .container .category img {
+  display: block;
+  height: 50%;
+  object-fit: contain;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#products .container .category-items {
+  display: none;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 0.7em;
+  flex-wrap: wrap;
+  padding: 1em;
+}
+#products .category img{
+  
+}
+
+#products .category-items img {
+  width: 20%;
+  border-radius: 10px;
+} */
+
+*/
