@@ -49,6 +49,7 @@ a {
 
 .section h3 {
   font-size: 2rem;
+  
 }
 
 
@@ -89,22 +90,20 @@ a {
 #products {
   width: 100%;
   min-height: 100vh;
+  background-color: var(--products-card-bg);
+
 }
 
 #products .container {
-  background-color: var(--products-card-bg);
-  border-radius: 15px;
-  width: 90%;
-  margin-top: 2em;
-  padding-top: 20px;
-  padding: 1em;
-
+  width: 100%;
+  /* background:orange; */
   
 }
 
 #products h2 {
   font-size: 2.1rem;
   text-align: center;
+  color:black;
 }
 
 #products .container .category{
@@ -114,29 +113,31 @@ a {
 
 #products .container .category img{
   display:block;
-  width: 85%;
+  min-width: 300px;
+  width:65%;
   margin:auto;
-  border-radius: 2.4em;
+ 
   
 }
 
 #products .container .category button{
   position: absolute;
-  bottom: 1.5em;
-  right: 8em;
+  bottom: 3%;
+  right: 19%;
 }
 
 #products .container .category-items {
   display: none;
   justify-content: center;
   align-items: center;
-  gap: 0.7em;
-  flex-wrap: wrap;
-  padding: 1em 2.7em;
+  gap: 1.7em;
+  flex-wrap: no-wrap;
+  padding: 1em 3.7em;
+  overflow-y:scroll;
 }
 
 #products .category-items img {
-  width: 20%;
+  width: 25%;
   border-radius: 10px;
 } 
 
@@ -190,13 +191,14 @@ footer .footer-bottom {
 
 /* Buttons */
 .btn {
-  padding: 0.7em 1em;
+  padding: 5px 10px ;
   color: #fff;
   display: inline-block;
-  border-radius: 2em;
+  border-radius: 12px;
   outline: none;
   border: none;
   cursor: pointer;
+  font-size:12px;
 }
 
 .btn-primary {
@@ -276,7 +278,7 @@ nav a#openup {
   display: none;
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 600px) {
   .hide-on-small {
     display: none;
   }
@@ -340,6 +342,18 @@ nav a#openup {
     width: 100%;
     position: relative;
   }
+
+ .btn{
+  padding: 2px 4px;
+  font-size: 0.7rem;
+ }
+
+ #products .container .category button{
+  position: absolute;
+  bottom: 3px;
+  right: 0px;
+}
+
 }
 .cf:before,
 .cf:after {
