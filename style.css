@@ -63,7 +63,7 @@ a {
   height: 100vh;
   position: relative;
   overflow-y: hidden;
-  z-index:1000;
+  z-index:4;
  
 }
 
@@ -101,7 +101,7 @@ a {
 #products {
   width: 100%;
   min-height: 100vh;
-  background-color:orange;
+  
 
   
 
@@ -111,7 +111,6 @@ a {
   background-color: var(--products-card-bg);
   border-radius: 15px;
   width: 90%;
-  /* min-height: 60%; */
   margin-top: 2em;
   padding-top: 20px;
   padding: 1em;
@@ -126,6 +125,7 @@ a {
 
 #products .container .category{
   position:relative;
+  
 }
 
 #products .container .category img{
