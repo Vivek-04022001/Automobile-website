@@ -13,7 +13,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 1px solid blue;
+  /* outline: 1px solid blue; */
 }
 
 body {
@@ -38,6 +38,8 @@ a {
 .section {
   padding: 2rem 0;
   
+ 
+  
 }
 
 .section-head {
@@ -61,8 +63,8 @@ a {
   height: 100vh;
   position: relative;
   overflow-y: hidden;
+  z-index:1000;
  
-  z-index: 0;
 }
 
 
@@ -76,7 +78,7 @@ a {
   box-shadow: inset 120px 100px 250px #000, inset -120px -100px 250px #000;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: 0;
 }
 
 #showcase .container {
@@ -100,19 +102,20 @@ a {
   width: 100%;
   min-height: 100vh;
   background-color:orange;
+
   
-  
+
 }
 
 #products .container {
   background-color: var(--products-card-bg);
   border-radius: 15px;
-  width: 80%;
-  min-height: 60%;
+  width: 90%;
+  /* min-height: 60%; */
   margin-top: 2em;
   padding-top: 20px;
   padding: 1em;
-  position:relative;
+
   
 }
 
@@ -123,7 +126,6 @@ a {
 
 #products .container .category{
   position:relative;
-  
 }
 
 #products .container .category img{
@@ -250,7 +252,7 @@ nav {
   background-color: #333;
   color: #eee;
   position: fixed;
-  /* z-index:20 !important;  */
+  /* z-index:1000; */
   
 }
 nav ul {
