@@ -370,7 +370,7 @@ nav a#openup {
 }
 
 #products .container .category img{
-  min-width:300px;
+  min-width:200px;
 
 }
 #products .container .category button{
@@ -390,7 +390,7 @@ nav a#openup {
 
 #products .container .category-items img{
  width: 100%;
- min-width:300px;
+ min-width:200px;
 }
 
 }
