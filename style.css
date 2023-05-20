@@ -101,10 +101,6 @@ a {
 #products {
   width: 100%;
   min-height: 100vh;
-  
-
-  
-
 }
 
 #products .container {
@@ -142,6 +138,19 @@ a {
   right: 8em;
 }
 
+#products .container .category-items {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7em;
+  flex-wrap: wrap;
+  padding: 1em 2.7em;
+}
+
+#products .category-items img {
+  width: 20%;
+  border-radius: 10px;
+} 
 
 
 
