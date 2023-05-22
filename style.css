@@ -13,7 +13,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
 }
 
 body {
@@ -183,6 +183,18 @@ a {
 
 
 /* Footer */
+footer {
+  background:#63a91f;
+  border-top: 2px dotted white;
+}
+
+footer ul.portrait img {
+  margin-top:10px;
+}
+
+footer img{
+border-radius: 5px;
+}
 footer .footer-cols {
   display: grid;
   grid-gap: 20px;
