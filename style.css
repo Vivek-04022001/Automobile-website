@@ -158,6 +158,15 @@ a {
   overflow:hidden;
   
 }
+#location .container{
+  width:100%;
+}
+
+#location .container iframe{
+  width:100%;
+  margin-top:2em;
+  border-radius: 20px;
+}
 
 
 /* Footer */
@@ -301,7 +310,7 @@ nav a#openup {
   }
 
   #showcase {
-    height: 50vh;
+    height: 60vh;
   }
 
   #showcase .container {
@@ -366,9 +375,10 @@ nav a#openup {
   
  }
 
+/* products for mobile */
 
 #products{
-  height: 60vh;
+  min-height: 65vh;
   gap: 0.5em;
 }
 
@@ -402,6 +412,21 @@ nav a#openup {
  min-width:200px;
 }
 
+/* location mobile display */
+#location{
+  
+  min-height: 50vh;
+  width: 100%;
+  
+ 
+}
+#location .container{
+  padding:1.2em;
+}
+
+#location .container iframe{
+width: 100%;
+}
 }
 .cf:before,
 .cf:after {
