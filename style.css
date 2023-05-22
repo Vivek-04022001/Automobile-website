@@ -161,9 +161,7 @@ a {
 }
 
 #products .category-items img {
- 
   width: 30%;
- 
 } 
 
 /* location section */
@@ -192,6 +190,7 @@ footer .footer-cols {
   padding: 2rem;
   text-align: left;
   font-size: 14px;
+
 }
 
 footer .footer-cols ul {
@@ -434,7 +433,7 @@ nav a#openup {
 
 #products .container .category-items img{
  width: 100%;
- min-width:200px;
+ min-width:300px;
 }
 
 /* location mobile display */
