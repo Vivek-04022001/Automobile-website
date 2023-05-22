@@ -88,6 +88,8 @@ a {
 }
 
 .container .logo{
+  margin:auto;
+  max-width:60%;
   height: 25%;
 }
 #showcase h1 {
