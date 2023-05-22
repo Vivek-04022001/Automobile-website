@@ -115,12 +115,10 @@ a {
 #products .container .category {
   position: relative;
   display: inline-block;
- 
 }
 
 #products .container .category img {
   display: block;
-  
 
   width: 100%;
   min-width: 300px;
@@ -207,8 +205,8 @@ footer .container .footer-image {
 
 footer .container .footer-image img {
   border-radius: 50%;
-  width: 10%;
-  min-width: 10px;
+  width: 15%;
+  min-width: 200px;
 }
 footer .footer-cols {
   padding: 1em 0em;
@@ -465,6 +463,10 @@ nav a#openup {
   footer {
     min-height: 25vh;
   }
+
+/* footer .footer-image img{
+  min-width: 75px;
+}   */
 }
 .cf:before,
 .cf:after {
