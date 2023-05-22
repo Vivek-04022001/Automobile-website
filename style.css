@@ -115,10 +115,12 @@ a {
 #products .container .category {
   position: relative;
   display: inline-block;
+ 
 }
 
 #products .container .category img {
   display: block;
+  
 
   width: 100%;
   min-width: 300px;
