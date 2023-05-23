@@ -204,9 +204,9 @@ footer .container .footer-image {
 }
 
 footer .container .footer-image img {
-  border-radius: 50%;
+  border-radius:0.6em;
   width: 15%;
-  min-width: 200px;
+  min-width: 230px;
 }
 footer .footer-cols {
   padding: 1em 0em;
