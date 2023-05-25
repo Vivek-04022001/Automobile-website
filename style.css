@@ -186,7 +186,7 @@ a {
 /* Footer */
 footer {
   background-color: #20bf55;
-  background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+  background: linear-gradient(to right, #434343 0%, black 100%);
   min-height: 35vh;
   width: 100%;
   display: flex;
