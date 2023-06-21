@@ -42,7 +42,7 @@ $(".cf a").on("click", function (event) {
     );
   }
 });
-
+// collapsible menu
 let btn = document.getElementsByClassName("btn");
 console.log(btn);
 
