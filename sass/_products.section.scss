@@ -43,7 +43,9 @@
     gap: 1.7em;
     flex-wrap: no-wrap;
     padding: 8px 10px;
-    overflow-y: auto;
+    overflow-y: hidden;
+    overflow-x:scroll;
+   
   }
   
   #products .category-items img {
